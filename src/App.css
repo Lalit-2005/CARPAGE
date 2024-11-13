@@ -565,6 +565,73 @@ button:hover {
     transform: translateY(0);
   }
 }
+/* Customer Feedback Section */
+.feedback-container {
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  animation: slide-in 0.5s ease-out forwards;
+}
+
+.feedback {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.rating {
+  color: #ffdd00;
+  font-size: 1.2rem;
+}
+
+.customer-name {
+  font-weight: bold;
+  color: #555;
+  text-align: right;
+}
+
+/* Keyframe for Slide-In Animation */
+@keyframes slide-in {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
